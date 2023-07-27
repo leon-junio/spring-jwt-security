@@ -4,7 +4,12 @@
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Minimal [Spring Boot](http://projects.spring.io/spring-boot/) sample app.
+## Endpoints
+### route: api/v1
+- auth/signin (post)
+- auth/signup (post)
+- demo (get)
+- user (get)
 
 ## Requirements
 
@@ -48,3 +53,18 @@ oc expose springboot-sample-app --hostname=www.example.com
 ## Copyright
 
 Released under the Apache License 2.0. See the [LICENSE](https://github.com/codecentric/springboot-sample-app/blob/master/LICENSE) file.
+
+## Authors
+
+- [@leonjrmartins](https://www.github.com/leon-junio)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://leonsolucoes.epizy.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+
+## Related
+
+The full tutorial of this project
+
+[Amigoscode](https://www.youtube.com/watch?v=KxqlJblhzfI)
