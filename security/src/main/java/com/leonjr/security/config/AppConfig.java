@@ -15,9 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-
-import com.leonjr.security.model.user.UserRepository;
-
+import com.leonjr.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 
 @Configuration

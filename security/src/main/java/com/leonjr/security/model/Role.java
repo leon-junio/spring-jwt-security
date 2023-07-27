@@ -1,4 +1,4 @@
-package com.leonjr.security.model.user;
+package com.leonjr.security.model;
 
 public enum Role {
     USER,

@@ -4,9 +4,10 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.leonjr.security.model.user.Role;
-import com.leonjr.security.model.user.User;
-import com.leonjr.security.model.user.UserRepository;
+
+import com.leonjr.security.model.Role;
+import com.leonjr.security.model.User;
+import com.leonjr.security.repository.UserRepository;
 import com.leonjr.security.request.AuthenticationRequest;
 import com.leonjr.security.request.RegisterRequest;
 import com.leonjr.security.response.AuthenticationResponse;

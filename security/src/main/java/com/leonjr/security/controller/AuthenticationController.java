@@ -18,12 +18,25 @@ public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
 
+    /**
+     * Create a new user and generate a token for it
+     * 
+     * @param request the request with the user data
+     * @return AuthenticationResponse with the token
+     */
     @PostMapping("/signup")
     public ResponseEntity<?> signup(
             @RequestBody RegisterRequest request) {
-            return ResponseEntity.ok(authenticationService.signup(request));
+        return ResponseEntity.ok(authenticationService.signup(request));
     }
 
+    /**
+     * 
+     * Authenticate a user and generate a token for it
+     * 
+     * @param request the request with the user data
+     * @return AuthenticationResponse with the token
+     */
     @PostMapping("/signin")
     public ResponseEntity<?> signin(
             @RequestBody AuthenticationRequest request) {

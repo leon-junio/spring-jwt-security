@@ -15,8 +15,14 @@ public class UserController {
 
     private final UserService userService;
 
+    
+    /**
+     * Get the actual user logged in the application
+     * 
+     * @return UserDTO object with the user data
+     */
     @GetMapping
-    public ResponseEntity<?> user() {
+    public ResponseEntity<?> getLoggedUser() {
         try {
             return ResponseEntity.ok(userService.getActualUser());
         } catch (Exception e) {

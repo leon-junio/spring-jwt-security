@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/demo")
 public class DemoController {
 
+    /**
+     * Route to test the security configuration
+     * 
+     * @return String with test message
+     */
     @GetMapping
     public ResponseEntity<String> demo() {
         try {

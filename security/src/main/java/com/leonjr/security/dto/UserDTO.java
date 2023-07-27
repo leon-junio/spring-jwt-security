@@ -1,4 +1,6 @@
-package com.leonjr.security.model.user;
+package com.leonjr.security.dto;
+
+import com.leonjr.security.model.Role;
 
 public record UserDTO (
     Integer id,
@@ -7,5 +9,4 @@ public record UserDTO (
     String email,
     Role role
 ) {
-    
 }

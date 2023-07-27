@@ -19,7 +19,7 @@ public class JwtService {
 
     @Value("${jwt-secret-token}")
     private String secretToken;
-    public static final long TOKEN_EXPERATION_TIME = 1000 * 60 * 60 * 24;
+    public static final long TOKEN_FINISH_TIME = 1000 * 60 * 60 * 24;
 
     /**
      * Get the key used to sign the JWT token.
@@ -53,7 +53,7 @@ public class JwtService {
                 .setClaims(extraClaims)
                 .setSubject(user.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + TOKEN_EXPERATION_TIME))
+                .setExpiration(new Date(System.currentTimeMillis() + TOKEN_FINISH_TIME))
                 .signWith(getSignInKey(), SignatureAlgorithm.HS256).compact();
     }
 
