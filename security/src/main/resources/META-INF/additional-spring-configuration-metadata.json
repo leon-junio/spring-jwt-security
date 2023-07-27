@@ -1,5 +1,5 @@
 {"properties": [{
   "name": "jwt-secret-token",
   "type": "java.lang.String",
-  "description": "A description for 'jwt-secret-token'"
+  "description": "A SHA256 with 256 bits or more in format HEX to be used by JWT signing tool"
 }]}
